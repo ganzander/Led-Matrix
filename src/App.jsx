@@ -4,7 +4,6 @@ import "./App.css";
 
 const App = () => {
   const [isHalted, setIsHalted] = useState(true);
-  const [isPlaying, setIsPlaying] = useState(false);
 
   const handleStart = () => {
     setIsHalted(false);
@@ -14,7 +13,7 @@ const App = () => {
   return (
     <div className="app">
       <div className="flex flex-col gap-4">
-        <h1 className="text-white text-7xl text-center font-bold uppercase">
+        <h1 className="text-white text-4xl sm:text-7xl text-center font-bold uppercase">
           LED MATRIX
         </h1>
         <div className="flex flex-row justify-center gap-4">
